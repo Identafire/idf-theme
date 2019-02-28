@@ -80,3 +80,14 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+/**
+ * Browsersync reload on post save
+ */
+add_action('save_post', function () {
+    // WP_ENV must be set on your development environment in order for this to work
+    // This is already defined if you are using Bedrock
+    if (WP_ENV === 'development') {
+        $args = ['blocking' => false];
+        wp_remote_get('http://localhost:3000/__browser_sync__?method=reload', $args);
+    }
+});

@@ -1,0 +1,21 @@
+/* buttons */
+.wp-block-button{
+  display: inline-block;
+  margin: 0 auto;
+  a.button{
+    trasform: background-color color ease-in-out .2s;
+    &.empty:link, &.empty:visited{
+    border-radius: 60px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $idf-orange;
+    padding: 1rem 2rem;
+      trasform: background-color color ease-in-out .2s;
+    }
+    &.empty:hover, &.empty:active, &.empty:focus{
+      color: #fff;
+      background-color: $idf-orange;
+      trasform: background-color color ease-in-out .2s;
+    }
+    }
+  }

@@ -10,11 +10,11 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import "~some-node-module";
+@import "~object-fit-images/preprocessors/mixin.scss";
 
 /** Import theme styles */
 @import "common/global";
 @import "components/buttons";
-@import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
 @import "layouts/header";

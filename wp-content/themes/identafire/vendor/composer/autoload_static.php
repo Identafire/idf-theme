@@ -9,6 +9,8 @@ class ComposerStaticInit914211c3730db6e3927480df02824ab4
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '72579e7bd17821bb1321b87411366eae' => __DIR__ . '/..' . '/illuminate/support/helpers.php',
+        'd28648b76004e764787e236ee0ff5a66' => __DIR__ . '/..' . '/mwdelaney/sage-advanced-custom-fields/advanced-custom-fields.php',
+        'beda72a3bff40d61ed819c75025fda66' => __DIR__ . '/..' . '/mwdelaney/sage-bootstrap4-navwalker/bootstrap4-navwalker.php',
         'b50336562d531777993d90ca775abd88' => __DIR__ . '/..' . '/soberwp/controller/controller.php',
     );
 

@@ -1,0 +1,123 @@
+@import 'mixins';
+$hdr-banner-height: 10%;
+/* global */
+  button.navbar-toggler{
+  height: $hdr-banner-height;
+  width: $hdr-banner-height;
+  background: $idf-orange url('../../images/x.svg') no-repeat center center;
+  border-radius: 0px;
+  color: #fff;
+  order: 3;
+  &.collapsed{
+    background-image:  url('../../images/hamburger.svg')
+  }
+  &:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+nav.nav-primary{
+  width:100%;
+  padding-bottom: 100%;
+  z-index: 200;
+  position: absolute;
+  ul{
+    color: #fff;
+    background-color: $idf-orange;
+//    width: 50%;
+    margin: $spacer-tiny $hdr-banner-height 0 0;
+    position: relative;
+    height: 50vw;
+    width: 50vw;
+    float: right;
+     @include typo(1.2rem, 2rem, 800, inherit);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+//    &:after{
+//    content: "";
+//    display: block;
+//    padding-bottom: 100%;
+//      }
+    li{
+      display: inline-block;
+      color: #fff;
+      width: 100%;
+      padding: $spacer-xs $spacer-sm 0 0;
+      a:link, a:visited{
+        color: #fff;
+        text-align: right;
+      }
+      a:hover, a:active, a:focus{
+        color: $idf-pale-orange;
+      }
+      ul{
+        display: none;
+        background-color: transparent;
+        width: 10vw;
+        margin-right: -10vw;
+        float: right;
+        li{
+          padding: 1vw 0;
+          a:link, a:visited{
+        color: $idf-orange;
+        text-align: left;
+      }
+      a:hover, a:active, a:focus{
+        color: $idf-pale-orange;
+      }
+        }
+      }
+    }
+    &.hide{
+      margin-right: -100%;
+    }
+    &.show{
+      margin-right: 0;
+    }
+  }
+  &.show{
+    ul{
+
+  }
+}
+}
+header.banner{
+width: 100%;
+  height: $hdr-banner-height;
+  z-index: 100;
+  .container{
+    width: 100%;
+//  height: $hdr-banner-height;
+  }
+    .logo{
+    order: 0;
+    width: $hdr-banner-height * 6;
+    min-width: 200px;
+      margin-left:5vw;
+      img{
+      margin-top: 1vw;
+      width: 100%;
+      height: auto;
+    }
+  }
+  nav.quick-nav{
+      order: 1;
+    ul.quicknav{
+    li{
+      list-style-type: none;
+      padding: 1vw 20px;
+      text-align: center;
+      @include typo(1.2rem, 2rem, 800, #000);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+  }
+    nav.nav-primary{
+      order: 4;
+  }
+}
+.main{
+  z-index: 1;
+}

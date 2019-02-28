@@ -1,5 +1,6 @@
 // import external dependencies
 import 'jquery';
+import 'object-fit-images/dist/ofi.min.js'
 
 // Import everything from autoload
 import "./autoload/**/*"

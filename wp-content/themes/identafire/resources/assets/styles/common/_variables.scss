@@ -1,10 +1,55 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
-
+$idf-orange: #ff5a39;
 $theme-colors: (
-  primary: #525ddc
+  primary: $idf-orange
 );
+$dark: #545454;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
 $navbar-light-toggler-icon-bg: none;
+$idf-pale-orange: #E0998B;
+
+$spacer-tiny: 4px;
+$spacer-xs: 10px;
+$spacer-sm: 30px;
+$spacer-md: 60px;
+$spacer-lg: 100px;
+
+.spacer-tiny{
+  height: 4$spacer-tiny;
+  width: 100%;
+  clear: both;
+}
+.spacer-xs{
+  height: $spacer-xs;
+  width: 100%;
+  clear: both;
+}
+
+.spacer-sm{
+  height: $spacer-sm;
+  width: 100%;
+  clear: both;
+}
+
+.spacer-md{
+  height: $spacer-md;
+  width: 100%;
+  clear: both;
+}
+.spacer-lg{
+  height: $spacer-lg;
+  width: 100%;
+  clear: both;
+}
+
+
+body, *{
+  font-size: 10px;
+}
+p{
+  font-size: 1.4rem;
+  line-height: 2rem;
+}

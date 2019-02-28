@@ -10,7 +10,14 @@ class App extends Controller
     {
         return get_bloginfo('name');
     }
-
+    public function logoImage()
+    {
+        return get_field('options_logo', 'option');
+    }
+    public function facebookLink()
+    {
+        return get_field('options_facebook', 'option');
+    }
     public static function title()
     {
         if (is_home()) {
